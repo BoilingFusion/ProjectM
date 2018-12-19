@@ -3,6 +3,7 @@ import smtplib
 
 
 target = input("target:")
+target2 = input("target2:")
 name = input("name:")
 code = input("code:")
 
@@ -14,6 +15,7 @@ try:
     print("logging into server")
     s.login(name,code)
     print("logged in and ready to go")
+    
 
 except:
     print("mission failed, better luck next time")
@@ -22,9 +24,9 @@ except:
 
 
 
+
 def SendMail(message):
-    
-    s.sendmail(name,target,contend)
+    s.sendmail(name,[target,target2],message)
 
 
 def CloseConnection():
