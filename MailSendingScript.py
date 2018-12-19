@@ -17,14 +17,16 @@ try:
 
 except:
     print("mission failed, better luck next time")
+    s.close()
     exit()
 
 
 
+def SendMail(message):
+    
+    s.sendmail(name,target,contend)
 
 
-
-
-print("closing connection")
-s.close()
-print("done")
+def CloseConnection():
+    print("closing connection")
+    print("done")
