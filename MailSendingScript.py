@@ -14,6 +14,7 @@ try:
     print("logging into server")
     s.login(name,code)
     print("logged in and ready to go")
+    
 
 except:
     print("mission failed, better luck next time")
@@ -22,11 +23,16 @@ except:
 
 
 
+
 def SendMail(message):
-    
+    contend = "TestMessage"
     s.sendmail(name,target,contend)
 
 
 def CloseConnection():
     print("closing connection")
     print("done")
+
+print("sending test message")
+SendMail("null")
+CloseConnection()
