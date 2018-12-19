@@ -3,6 +3,7 @@ import smtplib
 
 
 target = input("target:")
+target2 = input("target2:")
 name = input("name:")
 code = input("code:")
 
@@ -25,14 +26,9 @@ except:
 
 
 def SendMail(message):
-    contend = "TestMessage"
-    s.sendmail(name,target,contend)
+    s.sendmail(name,[target,target2],message)
 
 
 def CloseConnection():
     print("closing connection")
     print("done")
-
-print("sending test message")
-SendMail("null")
-CloseConnection()
