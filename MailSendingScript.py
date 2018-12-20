@@ -20,15 +20,16 @@ try:
 except:
     print("mission failed, better luck next time")
     s.close()
-    exit()
+    
 
 
 
-
+print("adding functions")
 def SendMail(message):
     s.sendmail(name,[target,target2],message)
 
 
 def CloseConnection():
     print("closing connection")
+    s.quit()
     print("done")
