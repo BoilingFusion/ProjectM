@@ -5,8 +5,8 @@ import praw
 
 def get_reddit():
 
-    reddit = praw.Reddit(client_id='ftEo3O0al4CSCA',
-                     client_secret='sHQdYvHTijtinLmXZwh4GwN6tiI',
+    reddit = praw.Reddit(client_id='',
+                     client_secret='',
                      user_agent='ProjectM by BoilingFusion and d3athk1ss')
 
 
