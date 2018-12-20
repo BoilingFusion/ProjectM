@@ -3,7 +3,6 @@ from reddit_quote_extractor import *
 import time
 
 try:
-    time.sleep(86400)
     SendMail(get_reddit())
     print("mission sucsesfull")
     
